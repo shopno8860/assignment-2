@@ -112,7 +112,7 @@ nav{
 }
 .destinaltion{
     max-width: 1000px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -174,14 +174,14 @@ nav{
 }
 .handpic{
     width: 50%;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     padding: 5px 15px;
     border-radius: 10px;
     background: rgba(251, 181, 99, 0.05);
 }
 .world{
     width: 50%;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     border-radius: 10px;
     /* height: 300px; */
     padding: 5px 15px;
@@ -205,4 +205,112 @@ nav{
     text-align: center;
     width: 60%;
 }
+.newsletter{
+    max-width: 1000px;
+    margin-top: 40px;
+    display: flex;
+    gap: 30px;
+    /* align-items: center; */
+   
+
+
+}
+.f-title {
+     display: flex;  
+     justify-content: center;  
+     gap: 1rem;
+}
+.f-title img{
+    margin: 0;
+}
+.f-title h2{
+    margin: 0px;
+}
+footer{
+    background: rgba(19, 19, 24, 0.05);
+    max-width: 1000px;
+
+    
+}
+.n-letter{
+    display: flex;
+    flex-direction: column;
+    justify-content: right left;
+    gap:15px;
+    border: 1px solid red;
+    padding: 30px;
+    border-radius: 15px;
+    
+    
+}
+.imgl{
+    margin:0;
+    position: relative;
+}
+.imgl img{
+    width: 100%
+}
+.n-letter input{
+    margin: 0px;
+    height: 40px;
+    background:rgba(19, 19, 24, 0.05);
+    border-radius: 8px;
+    border: none;
+    padding-left: 20px;
+    /* display: flex; */
+    /* align-items: center; */
+}
+.n-letter .n-button{
+    background: #FF5400;
+    color: white;
+}
+.n-letter h3{
+    margin: 0;
+    font-size: 1.5rem;
+}
+p{
+    color: #5A5A5D;
+    font-size: 1rem;
+}
+.discount{
+    height:70px;
+    width: 220px;
+    background-color: red;
+    border-radius: 10px;
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    rotate: -200deg;
+    transform-origin: center;
+    margin-bottom: 4rem;
+    margin-right: 2rem;
+}
+.f-description{
+    width: 38rem;
+}
+.f-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.icon {
+    margin: 0px;
+   
+}
+.copy hr{
+     width: 50rem;
+}
+.copy p{
+    text-align: center;
+     margin-top: 3rem;
+    padding-bottom: 3rem;
+    
+}
+.f-container{
+    padding-top: 5rem;
+}
+
+
 
