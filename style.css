@@ -1,5 +1,12 @@
 *{
-    margin: .5vw auto 0vw;
+    margin:0;  
+}
+.container{
+    width:1140px;
+     margin: auto;
+}
+main{
+    margin-left: auto;
 }
 .left{
     display: flex;
@@ -7,13 +14,13 @@
     gap: 1vw;
     
 }
-.right ul, li{
+.right ul,.right ul li{
     display: flex;
     list-style: none;  
     gap: 3.5vw; 
    
 }
-.right ul, li a{
+.right ul ,.right ul li a{
     text-decoration: none;
     color: black;
     
@@ -26,8 +33,6 @@ nav{
 
 .banner{
     background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.40) 0%, rgba(19, 19, 24, 0.00) 100%),url(Images/Group\ 13\ \(1\)\ \(1\).png);
-    height: 400px;
-    max-width: 1000px;
     border-radius: 12px;
     margin-top: 3vw;
     background-position: center;
@@ -65,23 +70,23 @@ nav{
    
 }
 .b-item{
+    display: flex;
     align-items: center;
-    max-width: 700px;
     justify-content: center;
-    display: 
+    gap:10px;
+    flex-direction: row;
 }
 /* main section strat  */
 .popular-tour{
     /* border: 1px solid green; */
     /* margin: .5vw auto 0vw; */
-    width: 1000px;
+    width: 100%;
     display: flex;
     /* height: 400px; */
     margin-top: 30px;
     gap: 10%;
 }
 .t-description{
-    width: 45%;
     padding: 1rem;
 }
 .t-img{
@@ -120,19 +125,18 @@ nav{
     text-align: center;
 }
 .row{
-    max-width: 1000px;
-    height: 300px;
     display: flex;
     /* border: 1px solid green ; */
     gap: 10px;
     margin-top: 5px;
+    flex-direction: row;
 }
 .img-collage .row img {
     
     height: 97%; 
     max-width: 100%; 
 }
-.image1{
+/* .image1{
     background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.40) 0%, rgba(19, 19, 24, 0.00) 100%),url(Images/Rectangle\ 5.png);
     border: 1px solid blue;
     width: 50%;
@@ -159,10 +163,9 @@ nav{
     justify-content: center;
     color: white;
     
-}
+} */
 /* Choose Section start  */
 .choose{
-    max-width: 1000px;
     height: fit-content;
     margin-top: 40px;
 }
@@ -203,10 +206,8 @@ nav{
 }
 .c-title{
     text-align: center;
-    width: 60%;
 }
 .newsletter{
-    max-width: 1000px;
     margin-top: 40px;
     display: flex;
     gap: 30px;
@@ -228,9 +229,6 @@ nav{
 }
 footer{
     background: rgba(19, 19, 24, 0.05);
-    max-width: 1000px;
-
-    
 }
 .n-letter{
     display: flex;
@@ -280,13 +278,27 @@ p{
     position:absolute;
     bottom: 0;
     right: 0;
-    rotate: -200deg;
+    rotate: 330deg;
     transform-origin: center;
     margin-bottom: 4rem;
     margin-right: 2rem;
+    
+}
+.discount h1{
+    justify-content: center;
+    display: flex;
+    padding-top: 1rem;
+}
+footer{
+    margin-top: 100px;
 }
 .f-description{
-    width: 38rem;
+    display: flex;
+    justify-content: center;
+}
+.f-description p{
+    width: 50%;
+    text-align: center;
 }
 .f-icon {
   display: flex;
@@ -300,7 +312,6 @@ p{
    
 }
 .copy hr{
-     width: 50rem;
 }
 .copy p{
     text-align: center;
@@ -314,3 +325,22 @@ p{
 
 
 
+@media only screen and (max-width: 600px) {
+    .container{
+        width:500px;
+         margin: auto;
+    }
+    .b-item{
+        flex-direction: column;
+    }
+    .popular-tour{
+        flex-direction: column;
+    }
+    .item-box{
+        width: 90%;
+        height: 20px;
+    }
+    .row{
+        flex-direction: column;
+    }
+  }
